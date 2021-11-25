@@ -1,0 +1,64 @@
+:root {
+    --background-site: #f3f3f3;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background: var(--background-site);
+}
+
+.main-content {
+    height: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-content .content {
+    max-width: 400px;
+    padding: 0 5rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.principal-title {
+    margin-bottom: 4rem;
+    font-size: 3rem;
+}
+
+.principal-text-content {
+    font-size: 1.8rem;
+    text-align: justify;
+    line-height: 1.5;   
+}
+
+.links-wrap {
+    margin-top: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media only screen and (max-width: 280px) {
+    .principal-text-content {
+        text-align: center;    
+    }
+}
